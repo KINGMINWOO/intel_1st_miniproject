@@ -1,17 +1,18 @@
 # [Intel]AI + SW 아카데미 7기 미니 프로젝트
 ## 🚀개요
-### 프로젝트명
+### <프로젝트명>
 스마트 & 재난 대비 오피스
 
-### 프로젝트 배경
+### <프로젝트 배경>
 - 스마트 공간의 대중화와 늘어나는 재난(지진, 화재 등)에 대한 불안감
 - 두 가지의 기능(자동화, 재난 대비)을 합쳐 하나의 시스템을 개발
   
-### 프로젝트 목표
+### <프로젝트 목표>
 - 최대한 다양한 센서와 모듈을 사용해보자
 - 데이터베이스를 자유자재로 다루어보자
 - 범용성이 높은 결과물을 만들어보자
-### Tools
+
+### <Tools>
 #### 보드
 - NUCLEO-F411RE(STM32)
 - Arduino UNO(ATmega328)
@@ -29,9 +30,11 @@
 - 초음파센서(HC-SR04)
 - 서보모터(SG90)
 
+### <구성도>
+![image](https://github.com/user-attachments/assets/d2576e21-3671-4b35-97bd-93a99f41a029)
 <br/><br/>
 ## 💡주요기능
-### 🏢 스마트 오피스
+### <🏢 스마트 오피스>
 - 자동문
   - 초음파 센서 2개와 서보모터 1개를 사용하여 구현
   - 오피스 ON일 때 작동, OFF일 때는 작동 X
@@ -49,7 +52,7 @@
 - 비상 알람벨
   - 외부인 감지 시, 재난 상황 발생 시에 비상 알람음이 울림
   
-### ⚠️ 재난 대비
+### <⚠️ 재난 대비>
 - 지진 감지
   - 기울임 센서를 사용하여 구현
   - 지진 감지 시 모든 오피스 사용자와 중앙 관리실에 지진 알림
@@ -67,7 +70,7 @@
   - 서보모터을 사용하여 구현
   - 오피스 사용자가 스마트폰으로 원격 제어 가능
   
-### 🎛️ 중앙 관리실
+### <🎛️ 중앙 관리실>
 - 오피스 전체 통체 서버 및 DB
   - 라즈베리 파이를 통해 오피스 & 중앙 관리실 & 사용자 간의 통신 서버 구축
   - 라즈베리 파이에서 Maria DB를 통해 오피스 별 인원수 및 현재 상태 정보 DB 구축
@@ -79,16 +82,22 @@
   - 외부인 침입 혹은 지진, 화재 발생 시 오피스 별 상황 LCD에 표시
   - 외부인 침입 상황 시
     - 관리자가 확인 후 RFID 모듈에 등록 된 관리자 카드 키 인식 시 상황 종료
+
+### <🔨 기능 흐름도>
+![image](https://github.com/user-attachments/assets/bd80b24f-d8ee-4917-8079-ddd2d14acd8e)
 <br/><br/>
 ## 📌 주요 코드
 - [스마트오피스](https://github.com/KINGMINWOO/intel_1st_miniproject/blob/main/1.%EC%BD%94%EB%93%9C/STM32/KMS_mini_project/Core/Src/main.c)  
 - [재난 대비](https://github.com/KINGMINWOO/intel_1st_miniproject/blob/main/1.%EC%BD%94%EB%93%9C/STM32/MiniProject_Gas_Fire_Vibration_wifi_PWM/Core/Src/main.c)  
 - [중앙 관리실 - DB 관리](https://github.com/KINGMINWOO/intel_1st_miniproject/blob/main/1.%EC%BD%94%EB%93%9C/Raspberry%20Pi/mini_client_device.c)  
-- [중앙 관리실 - 메인 서버]
-
+- [중앙 관리실 - 메인 서버](https://github.com/KINGMINWOO/intel_1st_miniproject/blob/main/1.%EC%BD%94%EB%93%9C/Raspberry%20Pi/mini_server.c)
 <br/><br/>
 ## ✊향후 계획
-
+1. 서버의 잦은 Segmentation Fault 개선
+2. WiFi 모듈 안정화
+3. STM32 보드에서 RFID 모듈 사용 구현
+4. 연동되는 사용자 어플 개발
+5. 현재는 오피스 내부 이곳저곳에 센서를 장착하는 형태 -> 하나의 모듈(제품) 형태로 구성하여 설치만 하면 되는 형태로 구현
 <br/><br/>
 ## 🙏제작자
 - [김민우](http://github.com/KINGMINWOO)
