@@ -30,6 +30,14 @@
 - 초음파센서(HC-SR04)
 - 서보모터(SG90)
 
+### <결과물>
+#### 오피스
+<img width="1440" height="810" alt="image" src="https://github.com/user-attachments/assets/5fd780be-73c8-4856-bc5d-605a23c417ac" />
+
+#### 관리실
+<img width="750" height="1334" alt="image" src="https://github.com/user-attachments/assets/78ebfe5e-8499-461e-952a-1e3c1ed5ca7f" />
+
+
 ### <구성도>
 ![image](https://github.com/user-attachments/assets/d2576e21-3671-4b35-97bd-93a99f41a029)
 <br/><br/>
